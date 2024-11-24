@@ -1,0 +1,18 @@
+<p>temp-ref works!</p>
+<br><br>
+<p>1. Input Field</p>
+<input type="text" #inpVal title="abc title">
+<button (click)="getValue(inpVal)">Submit</button>
+<p>Value: {{inputText}}</p>
+
+<br><br>
+2. Checkbox
+<input type="checkbox" #chkVal title="title"><br>
+<button (click)="getChkVal(chkVal)">Submit</button>
+
+
+<br><br>
+3. Radio Button: <br>
+<input type="radio" name="gender" value="male" #m>Male <br>
+<input type="radio" name="gender" value="female" #f>Female <br>
+<button (click)="getRadioVal(m.checked? m.value: f.value)">Submit</button>
